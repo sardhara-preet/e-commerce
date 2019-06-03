@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>e-commerce</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./web.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body onload="addAllItems()">
+    <div class="head">
+        <img id="logo_img" src="./images/background/logo.jpg" alt="logo" />
+        <div id="go"><h1>Go Shopping</h1></div>
+        <div id="contact"><h1>Call Us: 7600033274</h1></div>
+        <a href = "./cart.html"><div id="cart"><h1><i class="fa fa-shopping-cart"></i> Shopping Cart</h1></div></a>
+        <div id="totalItems"></div>
+    </div>
+    <div class="menu">
+        <div class="w3-text-white home" onclick="showItems('all')"><i class="fa fa-home"></i> Home</div>
+        <div class="electronics">Electornics <i class="fa fa-caret-down"></i>
+            <div class="electornics-content">
+                <div onclick="showItems('mobile')">Mobiles</div>
+                <div onclick="showItems('laptop')">Laptops</div>
+                <div onclick="showItems('camera')">Cameras</div>
+            </div>
+        </div>
+        <div class="appliances">Appliances <i class="fa fa-caret-down"></i>
+            <div class="appliances-content">
+                <div onclick="showItems('television')">Televisons</div>
+                <div onclick="showItems('washing_machine')">Washing Machines</div>
+                <div onclick="showItems('refrigarator')">Refrigators</div>
+            </div>
+        </div>
+        <div class="furniture">Furniture <i class="fa fa-caret-down"></i>
+            <div class="furniture-content">
+                <div onclick="showItems('bed')">Beds</div>
+                <div onclick="showItems('sofa')">Sofas</div>
+                <div onclick="showItems('chair')">Chairs</div>
+            </div>
+        </div>
+        <input type="text" placeholder="Search.." id="search" onkeyup="searchFunction()">
+    </div>
+        
+    <h1 id="no_item">Items not avilable</h1>
+
+    <div class="flex_container" id="flex_container">
+    </div>
+    <footer>
+        <div id="aboutus">
+            <p>Mail Us: preetsardhara1999@gmail.com</p>
+            <p>Call Us: 7600033274</p>
+        </div>
+        <address id="add">
+            Office Address:<br/>
+            Go Shopping Private Limited,<br/>
+            Vaishnavi Summit, Ground Floor, 7th Main,<br/>
+            80 Feet Road, 3rd Block,<br/>
+            Koramangala,<br/>
+            Bengaluru - 560034<br/>
+            India
+        </address>
+    </footer>
+    <script type="text/javascript" src='web.js'></script>
+</body>
+</html>

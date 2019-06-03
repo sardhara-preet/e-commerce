@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='cart.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body onload="addToBill()">
+    <div class="head">
+        <img id="logo_img" src="./images/background/logo.jpg" alt="logo" />
+        <div id="go"><h1>Go Shopping</h1></div>
+        <div id="contact"><h1>Call Us: 7600033274</h1></div>
+        <div id="totalItems"></div>
+    </div>
+    <hr>
+    <div class="mainBody">
+        <div class="bill">
+            <div class="billHead">
+                <div onclick="check()">Product Image</div>
+                <div>Product Name</div>
+                <div>Price</div>
+                <div>Quantity</div>
+            </div>
+            <div class="billBody">
+            </div>
+            <div class="billFoot">
+                <div id="subtotal">Subtotal</div>
+                <div id="totalQuantity">0</div>
+                <div id="ammount">0</div>
+            </div>
+        </div>
+        <div class="form">
+            <h1>User Details</h1>
+            <form>
+                <h2>Full Name<span>*</span></h2>
+                <input type="text" name="name" placeholder="Full name" required /><br />
+                <h2>Mobile Number<span>*</span></h2>
+                <input type="number" name="name" placeholder="Mobile no." required /><br />
+                <h2>Pin Code<span>*</span></h2>
+                <input type="number" name="name" placeholder="Pincode" required /><br />
+                <h2>Address<span>*</span></h2>
+                <textarea rows="4" cols="60" placeholder="Address"></textarea>
+                <input id="submit" type="submit" value="Deliver to this address" />
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="aboutus">
+            <p>Mail Us: preetsardhara1999@gmail.com</p>
+            <p>Call Us: 7600033274</p>
+        </div>
+        <address id="add">
+            Office Address:<br/>
+            Go Shopping Private Limited,<br/>
+            Vaishnavi Summit, Ground Floor, 7th Main,<br/>
+            80 Feet Road, 3rd Block,<br/>
+            Koramangala,<br/>
+            Bengaluru - 560034<br/>
+            India
+        </address>
+    </footer>
+    <script src='web.js'></script>
+</body>
+</html>
