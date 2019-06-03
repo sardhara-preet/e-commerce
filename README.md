@@ -1,6 +1,6 @@
 # e-commerce
-add all these files in a folder named 'ecommerce'
+Add all these files in a folder named 'ecommerce'
 
-run app.js
+Run app.js
 
-go to http://localhost:3000/home and you are ready to go
+Go to http://localhost:3000/home and you are ready to go
