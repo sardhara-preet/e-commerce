@@ -8,7 +8,7 @@ let urlencodedParser = urlencoded({extended: false});
 
 module.exports = function(app) {
 
-    app.get('/home', function(req, res) {
+    app.get('/', function(req, res) {
         res.sendFile('web.html', {root: `${__dirname}/../`});
     });
 
