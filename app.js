@@ -1,10 +1,10 @@
 const express = require('express');
-const controller = require('./controllers/controller.js')
+const controller = require('./public/controllers/controller.js')
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-app.use(express.static('../ecommerce'));
+app.use(express.static('./public'));
 
 controller(app);
 
